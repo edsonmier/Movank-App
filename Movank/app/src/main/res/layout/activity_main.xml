@@ -55,14 +55,34 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="110dp"
+                android:layout_width="130dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical"></LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"></LinearLayout>
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="5dp"
+                    android:background="@drawable/square_border">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:elevation="5dp"
+                        android:scaleType="fitXY"
+                        android:clipToOutline="true"
+                        android:background="@drawable/square_border"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/kimi_no_nawa" />
+                </FrameLayout>
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
