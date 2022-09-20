@@ -39,6 +39,7 @@
 
             <TextView
                 android:id="@+id/textView2"
+                android:transitionName="transition2"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:fontFamily="@font/poppins_extrabold"
@@ -116,10 +117,12 @@
                         android:elevation="5dp"
                         android:scaleType="fitXY"
                         android:clipToOutline="true"
+                        android:clickable="true"
                         android:background="@drawable/square_border"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/kimi_no_nawa" />
+                        app:srcCompat="@drawable/kimi_no_nawa"
+                        android:transitionName="transition1"/>
                 </FrameLayout>
             </LinearLayout>
         </LinearLayout>
@@ -161,20 +164,5 @@
                 android:text="Your Name es una película de animación japonesa estrenada en 2016; escrita y dirigida por Makoto Shinkai, animada por CoMix Wave Films y distribuida por Tōhō." />
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <Button
-                android:elevation="5dp"
-                android:backgroundTint="#514663"
-                android:fontFamily="@font/poppins_extrabold"
-                android:id="@+id/button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Saber más" />
-        </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
